@@ -1,0 +1,176 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{background-color: black;font-family: Arial, sans-serif;}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    /* color: white; */
+    position: fixed;
+    /* top: 0; */
+    padding: 1rem;
+    z-index: 10;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0 auto; */
+}
+.logo{
+    font-weight: bold;font-size: 1.3rem;color: orange;
+    font-family: Arial, sans-serif;
+}
+nav ul{
+    display: flex;
+   
+}
+nav ul li{
+   margin-left: 25px;
+    font-weight: bold;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    /* font-weight: bold; */
+    /* transition: color 0.5s; */
+}
+nav ul li a:hover{
+    color:orange;
+    font-weight: bolder;
+    
+}
+li a.sign{
+padding: 5px;
+background-color: orange;
+border-radius: 15px;
+}
+li a.sign:hover{
+    background-color: white;
+}
+a{
+    text-decoration: none;
+}
+
+.about-main{
+    width: 100%;
+    margin:8% 2% 0 2% ;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    margin-bottom: 10%;
+    padding-bottom: 10%;
+    border-bottom: 1px solid rgb(173, 172, 172);
+}
+.about-us{
+    padding: 3% ;
+    font-size: 2.5em;
+    /* background-color: yellow; */
+    color: white;
+
+}
+#overall{
+     width: 100%;
+    height: 100%;
+    color: rgb(184, 181, 181);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-items: center; */
+    gap: 20px;
+    margin-top: 5%;
+}
+#overall h3{
+    font-size: 2.5em;
+    color: orange;
+}
+#overall p{
+    font-size: 1.7em;
+}
+
+.wellcom,.story,.offer,.promise,.vision,.mission{
+    padding: 0 20%;
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+
+
+footer{
+    width: 100%;
+    height: 70vh; 
+    background-color: black;
+    
+}
+.overall{
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-items: center; */
+    gap: 20px;
+    margin-top: 10%;
+}
+.overall h3{
+    color: orange;
+    padding-bottom: 20px;
+
+}
+.overall p{
+    color: rgb(119, 116, 116);
+    padding-bottom: 30px;
+}
+.kings,.discover,.for-you,.for,.wellcom,.story,.offer,.promise,.vision,.mission{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.discover a{
+    text-decoration: none;
+}
+
+#contact{
+    width: 100%;
+    color: rgb(119, 116, 116);
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+.middle{
+    color: orange;
+}
+i{
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+
+@media screen and (max-width:575px) {
+    .logo{
+        font-size: 13px;
+    }
+    ul{
+        font-size: 12px;
+        /* display: flex; */
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:767px) {
+     .logo,ul{
+        font-size: 14px;
+    }
+}

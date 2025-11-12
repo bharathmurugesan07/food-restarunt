@@ -1,0 +1,118 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{
+    background-color: black;
+    color: white;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid red; */
+    /* margin: 15px; */
+}
+.container>h2{
+    color: orange;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+.container>p{
+    color: rgb(192, 192, 192);
+    margin-top: 25px;
+    margin-bottom: 20px;
+    
+}
+.party{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+label{
+    display: block;
+}
+input,select{
+    height: 25px;
+    width: 250px;
+    border: 1px solid orange;
+    background-color: rgba(185, 184, 184, 0.2);
+}
+/* input:focus{
+    color: orange;
+    outline: 1px solid orange;
+} */
+#select3,#select1,input[type="date"]{
+    color: white;
+}
+#select3,#select1{
+    background-color: black;
+}
+.slot{
+    margin-top: 60px;
+    width: 90%;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    gap: 20px;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    border-top: 2px solid rgb(187, 187, 187);
+    padding: 50px 139px;
+}
+.choose{
+    color: rgb(192, 192, 192);
+}
+.btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+button{
+    width: 160px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    background-color: orange;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+button:hover{
+    /* color: rgb(153, 130, 130); */
+    background-color: rgb(156, 94, 1);
+}
+button:focus{
+    background-color:rgb(156, 94, 1) ;
+}
+.reserve{
+    height: 40px;
+    width: 180px;
+    background-color: red;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.reserve:hover{
+    background-color: rgb(185, 1, 1);
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.register{
+    display: flex;
+    gap: 20px;
+}
+.back{
+    background-color: black;
+    border: 2px solid red;
+}
+.back:hover{
+    background-color: rgb(94, 88, 88);
+}
+
