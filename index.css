@@ -1,5 +1,5 @@
 *{margin: 0;padding: 0;box-sizing: border-box;}
-body{font-family: Arial, sans-serif;background-color: black;}
+body{font-family: Arial, sans-serif;background-color: black;font-size: 20px;}
 /* navigation */
 header{
     width: 100%;
@@ -7,22 +7,27 @@ header{
     background-color: black;
     position: fixed;
     padding: 1rem;
+    font-size: 20px;
     z-index: 10;
 }
 nav{
     display: flex;
+    /* display: inline-block; */
     justify-content: space-between;
-    align-items: center;
-    
+    align-items: center; 
 }
 .logo{
-    font-weight: bold;font-size: 1.3rem;color: orange;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: orange;
     font-family: Arial, sans-serif;
 }
 nav ul{
     display: flex;
+    /* gap: 25px; */
 }
 nav ul li{
+    font-size: 0.9em;
     margin-left: 25px;
     font-weight: bold;
 
@@ -62,12 +67,12 @@ li a.sign:hover{
     color: white;
 }
 .first h1{
-    font-size: 2.8rem;
+    font-size: 2.2em;
     margin-bottom: 10px;
     color: rgb(196, 94, 35)
 }
 .first p{
-    font-size: 1.5rem;
+    font-size: 1.4em;
     font-weight: bold;
     margin-bottom: 30px;
     color: rgb(218, 216, 216);
@@ -79,7 +84,7 @@ li a.sign:hover{
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 1em;
 }
 footer{
     width: 100%;
@@ -132,6 +137,89 @@ i{
 }
 a{
     text-decoration: none;
+}
+@media screen and (max-width:320px){
+    /* header{
+        font-size: 40px;
+    } */
+     /* nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+} */
+
+ nav ul li{
+    font-size: 0.7em;
+    margin-left: 5px;
+}
+    nav .logo{
+        font-size: 7px;
+        /* color: white; */
+    }
+    .first{
+        height:85vh;
+    }
+.overall h3{
+    font-size: 15px;
+    color: orange;
+    padding-bottom: 10px;
+
+}
+.overall p{
+    font-size: 18px;
+    color: rgb(119, 116, 116);
+    padding-bottom: 15px;
+}
+  .overall{
+    height: auto;
+    gap: 10px;
+    margin-top: 10%;
+}
+#contact{
+    padding: 10px 20px;
+    font-size: 2px;
+}
+.end{
+    padding-left: 10px;
+    font-size: 15px;
+}
+}
+@media screen  and (min-width:321px) and (max-width:575px){
+    nav ul li{
+    font-size: 0.7em;
+    margin-left: 5px;
+}
+    nav .logo{
+        font-size: 7px;
+        /* color: white; */
+    }
+    .first{
+        height:90vh;
+    }
+.overall h3{
+    font-size: 15px;
+    color: orange;
+    padding-bottom: 10px;
+
+}
+.overall p{
+    font-size: 18px;
+    color: rgb(119, 116, 116);
+    padding-bottom: 15px;
+}
+  .overall{
+    height: auto;
+    gap: 10px;
+    margin-top: 10%;
+}
+#contact{
+    padding: 10px 20px;
+    font-size: 2px;
+}
+.end{
+    padding-left: 10px;
+    font-size: 15px;
+}
 }
 @media screen and (max-width:575px) {
     .logo{
